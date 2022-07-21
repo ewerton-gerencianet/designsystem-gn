@@ -1,5 +1,5 @@
 const fs = require('fs');
-const tokens = JSON.parse(fs.readFileSync('./src/assets/tokens/designsystem-gn/data/tokens.json'));
+const tokens = JSON.parse(fs.readFileSync('./src/assets/tokens/designsystem-gn/tokens.json'));
 
 const pureColors = Object.keys(tokens.global.colors).reduce((acc, color) => {
   const groupColors = {};
